@@ -11,6 +11,8 @@ aneurysm_layers_extrap.py :  main code to compare GNNs with different number of 
 
 model_comparison.ipynb: notebook to generate node-wise comparisons w.r.t. different GNN modules
 
+draw_layers_interp.ipynb: notebook to generate node-wise comparisons w.r.t GNNs with different number of layers
+
 model.py : it contains the GNN class
 
 utils.py :  miscellaneous (e.g. dataset generation)
