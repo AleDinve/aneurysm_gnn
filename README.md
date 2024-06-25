@@ -9,6 +9,10 @@ aneurysm_layers_interp.py :  main code to compare GNNs with different number of 
 
 aneurysm_layers_extrap.py :  main code to compare GNNs with different number of layers (training: 25%, 50%, 75%, 100% ; test: 125%)
 
+paraview_export_generation.ipynb : notebook to generate original data and prediction (in Pytorch) to be exported in Paraview (needs to be processed by next notebook)
+
+paraview_export_process.ipynb : notebook that export the generated data in Paraview format.
+
 model_comparison.ipynb: notebook to generate node-wise comparisons w.r.t. different GNN modules
 
 draw_layers_interp.ipynb: notebook to generate node-wise comparisons w.r.t GNNs with different number of layers
