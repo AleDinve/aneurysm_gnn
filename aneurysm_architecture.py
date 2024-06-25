@@ -25,7 +25,7 @@ def main(epochs, conv_types):
     num_it = 5
     indicators = ['WSS','OSI'] #,'TAWSS'
     for sub_ind in sublists(indicators):
-        if len(sub_ind)>0: #only pairs of indicators, or the three of them
+        if len(sub_ind)==1: #only pairs of indicators, or the three of them
             for conv_type in conv_types:
                 print(conv_type)
                 train_perc = [25,50,100]
@@ -116,5 +116,5 @@ if __name__ == '__main__':
     #parser.add_argument("--conv", help="type(s) of Graph Convolutional Layer (passed as list string)", type=str, default='[gconv]')
     parser.add_argument("--epochs", help="extra features", type=int, default=5000)
     args = parser.parse_args()
-    conv_types = ['gconv','gin','gcn','gtr']
+    conv_types = ['gtr']
     main(args.epochs, conv_types)
