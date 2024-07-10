@@ -39,7 +39,7 @@ t = torch.linspace(0,1,T)
 
 save_folder = '_'.join(['store', 'architecture','interp', sub_ind[0] +'/' ])
 
-nodes = [60, 735, 1167, 1083, 1415]
+nodes = [60, 735, 1083, 1167, 1415]
 data_raw = []
 for i, conv_type in enumerate(conv_list):
     for it in range(5):  
